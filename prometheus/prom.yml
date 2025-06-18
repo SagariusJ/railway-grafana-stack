@@ -10,4 +10,4 @@ scrape_configs:
     metrics_path: /actuator/prometheus
     scheme: https
     static_configs:
-      - targets: ['prometheus.railway.internal']
+      - targets: ['microservice-inventory-production.up.railway.app']
