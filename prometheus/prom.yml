@@ -1,5 +1,6 @@
 global:
-  scrape_interval: 15s
+  scrape_interval: 30s
+  scrape_timeout: 15s
 
 scrape_configs:
   - job_name: 'prometheus'
@@ -9,5 +10,9 @@ scrape_configs:
   - job_name: 'inventory-service'
     metrics_path: /actuator/prometheus
     scheme: https
+    scrape_interval: 30s
+    scrape_timeout: 15s
+    tls_config:
+      insecure_skip_verify: true
     static_configs:
       - targets: ['microservice-inventory-production.up.railway.app']
