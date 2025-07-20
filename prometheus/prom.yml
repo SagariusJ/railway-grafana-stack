@@ -12,3 +12,7 @@ scrape_configs:
       insecure_skip_verify: true
     static_configs:
       - targets: ['microservice-inventory-production.up.railway.app']
+      - targets: ['microservice-authentication-production.up.railway.app']
+      - targets: ['microservice-benefits-production.up.railway.app']
+      - targets: ['microservice-caja-production.up.railway.app']
+      - targets: ['microservice-sale-production.up.railway.app']
