@@ -17,3 +17,4 @@ scrape_configs:
       - targets: ['microservice-caja-production.up.railway.app']
       - targets: ['microservice-sale-production.up.railway.app']
       - targets: ['microservice-fraccionamiento-production.up.railway.app']
+      - targets: ['microservice-dispersion-production.up.railway.app']
